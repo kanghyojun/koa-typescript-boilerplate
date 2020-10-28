@@ -1,0 +1,31 @@
+{
+  "name": "koa-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
+    "build-ts": "tsc",
+    "dev": "nodemon --watch src -e ts,tsx --exec ts-node src/server.ts",
+    "build": "npm run lint && npm run build-ts",
+    "start": "node dist/server.js"
+  },
+  "engines": {
+    "node": "14.x.x",
+    "npm": "6.x.x"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.0",
+    "yarn": "^1.22.10"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.6",
+    "eslint": "^7.12.1",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  }
+}

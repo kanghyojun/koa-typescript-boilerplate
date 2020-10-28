@@ -1,0 +1,15 @@
+node_modules
+*.swp
+
+# Dependency directory
+node_modules
+
+# Editors
+.idea
+*.iml
+
+# OS metadata
+.DS_Store
+
+# Ignore built ts files
+dist/**/*
